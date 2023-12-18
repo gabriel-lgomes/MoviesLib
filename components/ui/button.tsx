@@ -16,7 +16,7 @@ const Button: FC<ButtonProps> = ({ children, className, type, href }) => {
       href={href}
       className={`${
         type === "primary" ? "bg-primary" : "bg-transparent border-white border"
-      } text-white relative rounded-3xl uppercase text-sm flex items-center justify-center gap-4 h-[50px] w-full max-w-[200px]`}
+      } text-white relative rounded-3xl uppercase text-sm flex items-center justify-center gap-4 h-[50px] w-full max-w-[200px] hover:opacity-75 transition-all duration-300`}
     >
       {children}
     </Link>
