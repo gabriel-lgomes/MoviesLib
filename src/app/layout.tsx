@@ -3,7 +3,6 @@ import "./globals.css";
 import "tailwindcss/tailwind.css";
 import { Inter } from "next/font/google";
 import Bebas from "next/font/local";
-
 export const metadata: Metadata = {
   title: "MoviesLib",
   description: "",
@@ -26,7 +25,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={`${inter.variable} ${bebas.variable}`}>{children}</body>
+      <body
+        className={`${inter.variable} ${bebas.variable} bg-black h-full font-primary`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

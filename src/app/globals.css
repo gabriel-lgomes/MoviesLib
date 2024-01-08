@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Swiper */
+
+.swiper {
+  padding-bottom: 50px !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.5rem !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+  background-color: #8209d1;
+  border-radius: 100%;
+  width: 40px !important;
+  height: 40px !important;
+  top: 40% !important;
+}
+
+.swiper-pagination-bullet {
+  bottom: -10px !important;
+  background: white !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #8209d1 !important;
+}
